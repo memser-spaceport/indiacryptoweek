@@ -6,7 +6,7 @@ const cache = {}
 export async function loadEvents() {
   if (!cache.events) {
     const events = {}
-    const fp = '../events/'
+    const fp = './events/'
     const dir = fs.readdirSync(fp)
     dir.map((f) => {
       if (f[0] == '_') return // skip _
